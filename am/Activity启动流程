@@ -1,0 +1,9 @@
+@startuml
+ActivityManagerService -> ActivityThread : startProcessLocked
+ActivityThread -> ActivityThread : main
+ActivityThread -> ActivityThread : attach
+ActivityThread -> ActivityManagerService : attachApplication
+ActivityManagerService -> ActivityThread : bindApplication
+ActivityThread -> Application : attach
+ActivityThread -> Application :create
+@enduml
